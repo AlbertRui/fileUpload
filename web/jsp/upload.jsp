@@ -53,8 +53,8 @@
     </script>
 </head>
 <body>
-<span style="color: red;">${message}</span>
-<form action="${pageContext.request.contextPath}/uploadServlet" method="post" enctype="multipart/form-data">
+<span style="color: red;">${requestScope.message}</span>
+<form action="${pageContext.request.contextPath}/fileUploadServlet" method="post" enctype="multipart/form-data">
     <input type="hidden" id="fileNum" name="fileNum" value="1"/><br><br>
     <table>
         <tr class="file">

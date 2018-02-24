@@ -11,6 +11,10 @@
     <title>Title</title>
 </head>
 <body>
-
+<!-- 静态下载 -->
+<a href="../resources/xyz.txt">download xyz.txt</a><br><br>
+<!-- 动态下载 -->
+<a href="test.jsp">download test.jsp</a><br><br>
+<a href="${pageContext.request.contextPath}/downloadServlet">download hello.pptx</a>
 </body>
 </html>
